@@ -120,9 +120,51 @@ const styles = StyleSheet.create({
     color: '#666',
   },
 
-
+  header: {
+    fontSize: 28,
+    fontWeight: '700',
+    color: '#1e3c72',
+    textAlign: 'center',
+    marginBottom: 20,
+},
+listContent: {
+    paddingHorizontal: 15,
+    paddingBottom: 20,
+},
+userCard: {
+    backgroundColor: '#ffffff',
+    padding: 15,
+    borderRadius: 10,
+    marginBottom: 10,
+    shadowColor: "#000",
+    shadowOffset: {
+        width: 0,
+        height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 3.84,
+    elevation: 5,
+    borderLeftWidth: 5,
+    borderLeftColor: '#A020F0',
+},
+label: {
+    fontWeight: 'bold',
+    color: '#555',
+},
+detailText: {
+    fontSize: 16,
+    marginBottom: 3,
+    color: '#333',
+},
+emailText: {
+    fontSize: 14,
+    color: '#A020F0',
+    marginTop: 5,
+    borderTopWidth: 1,
+    borderTopColor: '#eee',
+    paddingTop: 5,
+}
 });
-
 
 export default styles;
 
