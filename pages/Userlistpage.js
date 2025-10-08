@@ -7,7 +7,7 @@ export default function Userlistpage({navigation}) {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        axios.get("http://127.0.0.1:8000/Registration/api/users/")
+        axios.get("http://192.168.20.105:8000/Registration/api/users/")
             .then((res) => {
                 setUsers(res.data);
             })
@@ -28,7 +28,7 @@ export default function Userlistpage({navigation}) {
                 {text: "Cancel", style: "cancel"},
                 {
                     text: "Delete", style: "destructive", onPress: () => {
-                        axios.delete(`http://127.0.0.1:8000/Registration/api/users/${id}/`)
+                        axios.delete(`http://192.168.20.105:8000/Registration/api/users/${id}/`)
                         .then(() => {
                             Alert.alert("Success", "User deleted successfully");
                         })
