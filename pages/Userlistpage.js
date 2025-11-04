@@ -7,7 +7,7 @@ export default function Userlistpage({navigation}) {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        axios.get("http://127.0.0.1:8000/Registration/api/users/")
+        axios.get("https://peitel-backend-alejos.onrender.com/Registration/api/users/")
             .then((res) => {
                 setUsers(res.data);
             })
@@ -42,7 +42,7 @@ export default function Userlistpage({navigation}) {
     //         )
 
     //     );
-    axios.delete(`http://127.0.0.1:8000/Registration/api/users/${id}/`)
+    axios.delete(`https://peitel-backend-alejos.onrender.com/Registration/api/users/${id}/`)
     };
 
     return (
